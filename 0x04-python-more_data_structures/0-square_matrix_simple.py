@@ -1,14 +1,5 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-"""Compute the square value of all integers in a matrix."""
-result_matrix = []
+new_matrix = [[x ** 2 for x in row] for row in matrix]
+return new_matrix
 
-for row in matrix:
-result_row = []
-
-for element in row:
-result_row.append(element ** 2)
-
-result_matrix.append(result_row)
-
-return result_matrix
